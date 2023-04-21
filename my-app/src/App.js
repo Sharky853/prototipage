@@ -1,27 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import  ReactFusionGrid  from "ReactFusionGrid";
+
+import FusionGrid from 'fusiongrid';
+import Grid from "./Grid"
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
 
-        <p3>Hello word</p3>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+ 
+ReactFusionGrid.fgRoot(FusionGrid);
+function App() {
+ 
+
+  return (
+    
+    <div className="App">
+      <body>
+      <h1> FusionGrid</h1>
+      <Grid />
+      </body>
     </div>
+
+    
   );
 }
 
-export default App;
+
+export default App();
