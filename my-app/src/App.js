@@ -1,4 +1,29 @@
-import logo from './logo.svg';
+
+
+import "./styles.css";
+import React from "react";
+import { ReactFusionGrid } from "react-fusiongrid";
+import FusionGrid from "fusiongrid";
+import Grid from "./Grid";
+import "fusiongrid/dist/fusiongrid.css";
+
+ReactFusionGrid.fgRoot(FusionGrid);
+
+export default function App() {
+  return (
+    <div className="App">
+      <h1>Fusiongrid</h1>
+      <Grid />
+    </div>
+  );
+}
+
+
+
+
+
+
+/*import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -23,3 +48,5 @@ function App() {
 }
 
 export default App;
+
+*/
